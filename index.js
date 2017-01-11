@@ -48,6 +48,7 @@ rotate_file.prototype._getFile = function() {
 	if (!filename.match(/^\//)) {
 		filename = path.join(this.log_root, filename);
 	}
+	this.dirname = '/';
 	return strftime(filename);
 };
 
